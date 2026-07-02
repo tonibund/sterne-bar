@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Lokale Dev-Config / Preview
+.claude/
+
+# Design-Quelle (nicht für die Website nötig)
+staerne bar.pdf
