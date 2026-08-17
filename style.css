@@ -138,7 +138,7 @@ body {
 /* big groovy logo */
 .logo {
   font-family: var(--font-groovy);
-  font-style: italic;        /* groovy slant — wie im Flyer */
+  font-style: normal;
   line-height: 0.86;
   margin: 6px 0 20px;
 }
@@ -477,7 +477,7 @@ strong { color: var(--ink); font-weight: 700; }
   .arch { border-radius: 220px 220px 22px 22px; }
   .curve text { font-size: 46px; letter-spacing: 5px; }
   .hero-facts { flex-direction: column; }
-  .fact-divider { width: 60%; height: 3px; min-height: 0; }
+  .fact-divider { width: 60%; height: 3px; min-height: 0; align-self: center; }
   .fact-place { text-align: center; }
   .info-grid { grid-template-columns: 1fr; }
   .spark-a, .spark-b { display: none; }
