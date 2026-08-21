@@ -482,3 +482,72 @@ strong { color: var(--ink); font-weight: 700; }
   .info-grid { grid-template-columns: 1fr; }
   .spark-a, .spark-b { display: none; }
 }
+
+/* ============================================================
+   VERSCHIEBIG-ALERT
+   ============================================================ */
+.alert {
+  position: relative;
+  z-index: 5;
+  width: calc(100% - 32px);
+  max-width: 720px;
+  margin: clamp(16px, 4vw, 32px) auto 0;
+  background: var(--orange);
+  color: var(--cream-light);
+  border: 5px solid var(--ink);
+  border-radius: 26px;
+  box-shadow: 0 10px 0 var(--ink), 0 18px 34px rgba(36,30,26,0.25);
+  padding: clamp(22px, 4.5vw, 34px) clamp(20px, 4vw, 38px);
+  text-align: center;
+}
+
+.alert-badge {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  padding: 7px 22px;
+  margin-bottom: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: clamp(11px, 2.4vw, 14px);
+}
+
+.alert-head {
+  font-family: var(--font-groovy);
+  font-size: clamp(26px, 6.4vw, 46px);
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  text-shadow: 3px 4px 0 var(--ink);
+  margin-bottom: 12px;
+}
+
+.alert-text {
+  font-weight: 600;
+  font-size: clamp(15px, 3vw, 19px);
+  line-height: 1.5;
+}
+.alert-text strong { font-weight: 800; }
+
+/* date ribbon in postponed state */
+.date-ribbon-off {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: var(--cream);
+}
+.date-ribbon-off s {
+  opacity: 0.55;
+  text-decoration-thickness: 3px;
+}
+.ribbon-note {
+  font-family: var(--font-body);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: clamp(11px, 2.4vw, 14px);
+  color: var(--orange-deep);
+}
