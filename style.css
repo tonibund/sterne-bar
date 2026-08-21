@@ -518,13 +518,16 @@ strong { color: var(--ink); font-weight: 700; }
 .alert-head {
   font-family: var(--font-groovy);
   font-size: clamp(26px, 6.4vw, 46px);
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: 0.5px;
-  text-shadow: 3px 4px 0 var(--ink);
+  color: var(--ink);
+  text-wrap: balance;
   margin-bottom: 12px;
 }
 
 .alert-text {
+  color: var(--ink);
+  text-wrap: balance;
   font-weight: 600;
   font-size: clamp(15px, 3vw, 19px);
   line-height: 1.5;
